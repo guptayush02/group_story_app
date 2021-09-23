@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from "react-navigation-stack";
-import Login from '../../screens/auth/Login';
+import { Login } from '../../screens/auth';
+import { Dashboard } from '../../screens/home';
 
 export const authNavigator = createStackNavigator(
   {
@@ -15,4 +16,18 @@ export const authNavigator = createStackNavigator(
     initialRouteName: 'Login',
   }
 );
+
+export const homeNavigator = createStackNavigator(
+  {
+    Dashboard: {
+      screen: Dashboard,
+      navigationOptions: ({ navigation }) => ({
+        title: 'Home'
+      }),
+    }
+  },
+  {
+    initialRouteName: 'Dashboard',
+  }
+)
 
