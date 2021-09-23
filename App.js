@@ -5,12 +5,15 @@ import Index from './src/Index';
 import styles from './App.style';
 import { Provider } from "react-redux";
 import store from './src/redux/store/store'
+import { NativeBaseProvider } from "native-base";
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <StatusBar style="auto" />
-      <Index />
-    </Provider>
+    <NativeBaseProvider>
+      <Provider store={store}>
+        <StatusBar style="auto" />
+        <Index />
+      </Provider>
+    </NativeBaseProvider>
   );
 }
