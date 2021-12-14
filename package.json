@@ -8,9 +8,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.15.8",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "expo": "~42.0.1",
+    "expo-facebook": "~11.3.1",
     "expo-status-bar": "~1.0.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "native-base": "^3.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -22,6 +27,7 @@
     "react-navigation-stack": "^2.10.4",
     "react-redux": "^7.2.5",
     "redux": "^4.1.1",
+    "sequelize": "^6.12.0-alpha.1",
     "styled-components": "^5.3.1",
     "styled-system": "^5.1.5"
   },

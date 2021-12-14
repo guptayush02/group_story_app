@@ -18,15 +18,17 @@ export default function Index() {
 
   const checkLoggedIn = async () => {
     try {
-      const me = await AsyncStorage.getItem('me');
+      const me = await AsyncStorage.getItem('authentication');
+      console.log("me--->", me)
       if (!!me) {
         dispatch(authenticate())
-        dispatch(saveMe())
+        dispatch(saveMe(me))
         setIsLoggined(selector)
         return;
       }
       dispatch(unauthenticated());
       setIsLoggined(selector);
+      AsyncStorage.removeItem('authentication');
       return;
     } catch (err) {
       // will add toast according to project requirements

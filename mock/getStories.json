@@ -1,0 +1,29 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "title 1",
+      "description": "This is dummy test description"
+    },
+    {
+      "id": 2,
+      "title": "title 2",
+      "description": "This is dummy test description"
+    },
+    {
+      "id": 3,
+      "title": "title 3",
+      "description": "This is dummy test description"
+    },
+    {
+      "id": 4,
+      "title": "title 4",
+      "description": "This is dummy test description"
+    },
+    {
+      "id": 5,
+      "title": "title 5",
+      "description": "This is dummy test description"
+    }
+  ]
+}
